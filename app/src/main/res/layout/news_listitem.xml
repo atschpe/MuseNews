@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/newsDate"
+        style="@style/News.Header"
+        android:textStyle="normal"
+        tools:text="News Date" />
+
+    <TextView
+        android:id="@+id/newsSection"
+        style="@style/News"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/section_corner"
+        tools:text="News Section" />
+
+    <TextView
+        android:id="@+id/newsTitle"
+        style="@style/News.Header"
+        android:layout_below="@id/newsSection"
+        android:textSize="18sp"
+        tools:text="News Title" />
+
+    <TextView
+        android:id="@+id/newsAuthor"
+        style="@style/News.Header"
+        android:layout_below="@id/newsTitle"
+        tools:text="News Author" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsAuthor"
+        android:background="#D7CCC8">
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/padding"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/newsExtract"
+            style="@style/News"
+            android:layout_gravity="center"
+            android:maxLines="5"
+            tools:text="Here the standfirst is printed off to enable the user to get a first impression of the article." />
+    </LinearLayout>
+</RelativeLayout>

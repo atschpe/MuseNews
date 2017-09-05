@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Muse News</string>
+    <string name="no_internet">No internet connection found.</string>
+    <string name="no_news">No music news found.</string>
+
+    <string name="no_data">VOID</string>
+    <string name="by">By:\u0020</string>
+    <string name="posted">posted:\u0020</string>
+    <string name="at">at:\u0020</string>
+</resources>
